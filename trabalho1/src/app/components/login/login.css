@@ -10,16 +10,18 @@
 }
 
 .website-name {
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.25rem;
 }
 
 .body-container {
   display: flex;
   justify-content: center;  /* Centraliza horizontal */
   align-items: center;      /* Centraliza vertical */
-  min-height: 100vh;        /* Altura total da viewport */
+  min-height: 0;        /* Altura mínima definida para compatibilidade */
   padding: 1rem;            /* Espaçamento nas bordas em mobile */
 }
 
@@ -39,7 +41,7 @@
 }
 
 .quick-links a {
-  color: #007bff;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -119,6 +121,7 @@
 }
 
 h2 {
+  font-size: xx-large;  
   text-align: center;
   margin-bottom: 1rem;
 }
