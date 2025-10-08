@@ -52,8 +52,7 @@
               #senhaCtrl="ngModel"
               placeholder="***********************" 
             />
-            <button type="button" class="toggle" (click)="onToggleSenha()" [attr.aria-label]="mostrarSenha ? 'Ocultar senha' : 'Mostrar senha'">
-              {{ mostrarSenha ? '🙈' : '👁' }}
+            <button type="button" class="toggle" (click)="onToggleSenha()" [attr.aria-label]="mostrarSenha ? 'Ocultar senha' : 'Mostrar senha'"> 👁
             </button>
           </div>
           <p class="error" *ngIf="errorSenha">{{ errorSenha }}</p>
@@ -88,9 +87,11 @@
           <p class="error" *ngIf="errorCargo">{{ errorCargo }}</p>
         </div>
 
-        <button type="submit" class="btn" [disabled]="isSubmitting || !registerForm.valid">
+        <!-- <button type="submit" class="btn" [disabled]="isSubmitting || !registerForm.valid">
           {{ isSubmitting ? 'Criando...' : '>>' }}
-        </button>
+        </button> -->
+
+        <button routerLink="/register2" type="button" class="btn"> >> </button>
       </form>
     </p-card>
   </div>

@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
 import { SelectModule } from 'primeng/select';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-register',  // Ou 'app-login' se reutilizar
   standalone: true,
-  imports: [CardModule, FormsModule, SelectModule],
+  imports: [CardModule, FormsModule, SelectModule, RouterLink],
   templateUrl: './register1.html',  // Renomeie se necessário
   styleUrl: './register1.css'
 })

@@ -50,7 +50,9 @@ export class Login {
     // Exemplo: toggle via ViewChild no input
   }
 
-  onCadastrar() {}
+  onCadastrar() {
+    
+  }
 
   onEsqueciSenha() {}
 }

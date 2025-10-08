@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { provideRouter, RouterOutlet } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { Card } from "primeng/card";
+import { bootstrapApplication } from '@angular/platform-browser';
+import { routes } from './app.routes';
 
 @Component({
   selector: 'app-root',
@@ -14,3 +16,10 @@ import { Card } from "primeng/card";
 export class App {
   protected readonly title = signal('trabalho1');
 }
+
+bootstrapApplication(App, {
+  providers: [
+    provideRouter(routes),
+
+  ]
+});
