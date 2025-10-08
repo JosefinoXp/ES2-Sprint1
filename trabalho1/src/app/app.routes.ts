@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
 import { Login } from './components/login/login';
-import { Registrer } from './components/registrer/registrer';
 import { Home } from './components/home/home';
+import { Register1 } from './components/register1/register1';
+import { Register2 } from './components/register2/register2';
 
 export const routes: Routes = [
     {
@@ -9,12 +10,16 @@ export const routes: Routes = [
         component: Login
     },
     {
-        path: 'register',
-        component: Registrer
-    },
-    {
         path: 'home',
         component: Home
+    },
+    {
+        path: 'register1',
+        component: Register1
+    },
+    {
+        path: 'register2',
+        component: Register2
     },
     {
         path: '**', redirectTo: 'login', pathMatch: 'full'
