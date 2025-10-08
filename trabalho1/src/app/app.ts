@@ -17,10 +17,3 @@ import { RouterLink } from '@angular/router';
 export class App {
   protected readonly title = signal('trabalho1');
 }
-
-bootstrapApplication(App, {
-  providers: [
-    provideRouter(routes),
-
-  ]
-});
