@@ -5,7 +5,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { Card } from "primeng/card";
 import { bootstrapApplication } from '@angular/platform-browser';
 import { routes } from './app.routes';
-import { RouterLink } from '@angular/router';
+import { SelectModule } from 'primeng/select';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-root',
